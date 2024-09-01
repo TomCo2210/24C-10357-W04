@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".Fragments.HighScoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/highScores_ET_location"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="@string/list_hint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/highScores_BTN_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highScores_ET_location"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_margin_highscores"
+        android:text="@string/send" />
+
+</RelativeLayout>
