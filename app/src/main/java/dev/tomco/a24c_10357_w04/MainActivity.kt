@@ -2,13 +2,10 @@ package dev.tomco.a24c_10357_w04
 
 import android.os.Bundle
 import android.widget.FrameLayout
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import dev.tomco.a24c_10357_w04.Fragments.HighScoreFragment
 import dev.tomco.a24c_10357_w04.Fragments.MapFragment
-import dev.tomco.a24c_10357_w04.Interfaces.Calback_HighScoreItemClicked
+import dev.tomco.a24c_10357_w04.Interfaces.Callback_HighScoreItemClicked
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         highScoreFragment = HighScoreFragment()
-        highScoreFragment.calbackHighScoreItemClicked = object : Calback_HighScoreItemClicked {
+        highScoreFragment.calbackHighScoreItemClicked = object : Callback_HighScoreItemClicked {
             override fun highScoreItemClicked(lat: Double, lon: Double) {
                 mapFragment.zoom(lat, lon)
             }

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
-import dev.tomco.a24c_10357_w04.Interfaces.Calback_HighScoreItemClicked
+import dev.tomco.a24c_10357_w04.Interfaces.Callback_HighScoreItemClicked
 import dev.tomco.a24c_10357_w04.R
 
 
@@ -15,7 +15,7 @@ class HighScoreFragment : Fragment() {
 
     private lateinit var highScores_ET_location: TextInputEditText
     private lateinit var highScores_BTN_send: MaterialButton
-    var calbackHighScoreItemClicked: Calback_HighScoreItemClicked? = null
+    var calbackHighScoreItemClicked: Callback_HighScoreItemClicked? = null
 
 
     override fun onCreateView(
